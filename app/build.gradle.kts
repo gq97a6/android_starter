@@ -51,10 +51,10 @@ android {
     kotlin {
         compilerOptions {
             jvmTarget = JvmTarget.fromTarget("11")
-            freeCompilerArgs.add("-Xopt-in=androidx.compose.material3.ExperimentalMaterial3ExpressiveApi")
-            freeCompilerArgs.add("-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api")
-            freeCompilerArgs.add("-Xopt-in=kotlin.time.ExperimentalTime")
-            freeCompilerArgs.add("-Xopt-in=kotlin.uuid.ExperimentalUuidApi")
+            freeCompilerArgs.add("-opt-in=androidx.compose.material3.ExperimentalMaterial3ExpressiveApi")
+            freeCompilerArgs.add("-opt-in=androidx.compose.material3.ExperimentalMaterial3Api")
+            freeCompilerArgs.add("-opt-in=kotlin.time.ExperimentalTime")
+            freeCompilerArgs.add("-opt-in=kotlin.uuid.ExperimentalUuidApi")
         }
     }
 }
@@ -96,10 +96,11 @@ dependencies {
     testImplementation("androidx.room:room-testing:2.8.3")
 
     //Tests
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
-    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.10.01"))
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    testImplementation("junit:junit:4.13.2")
 }
