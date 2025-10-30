@@ -8,10 +8,7 @@ import com.example.starter.model.Bird
 import com.example.starter.model.Cat
 import com.example.starter.model.Dinosaur
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
