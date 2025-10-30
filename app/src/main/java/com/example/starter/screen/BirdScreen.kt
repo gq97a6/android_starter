@@ -16,9 +16,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.starter.BirdNavKey
-import com.example.starter.CatNavKey
-import com.example.starter.DinosaurNavKey
 import com.example.starter.PreviewSample
 import com.example.starter.cs
 import com.example.starter.ui.component.MyTopAppBar
